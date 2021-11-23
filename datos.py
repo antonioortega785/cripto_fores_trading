@@ -42,7 +42,7 @@ while escuchador.is_alive():
     print('\n')
     print('Estod actual: ',estados_programa)
 
-    if estados_programa == 'e':
+    if estados_programa != 'i':
 
 
         datos = llamadas.consultar(mercado, numero_ofertas)
