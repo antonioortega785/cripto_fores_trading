@@ -28,3 +28,7 @@ def guardar2(datos, directorio):
     hoja['A1'] = n_registros +1
 
     libro.save(directorio)
+
+def lectura (directorio, hoja):
+    cuadro = pd.read_excel(directorio, sheet_name = hoja)
+    return cuadro
